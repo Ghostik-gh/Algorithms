@@ -1,0 +1,10 @@
+
+with open('Lab2\input.txt', 'r') as f:
+    string = f.read()
+
+string = string.split("\n")
+ans = []
+for i in string:
+    ans.insert(0, i)
+
+print(*ans, sep="\n")
